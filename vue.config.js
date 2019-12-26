@@ -61,10 +61,14 @@ module.exports = {
     // proxy: {
     //   "/": {
     //     target: "http://localhost:10066",
+    //     pathRewrite: { '^/api': '/' },
     //     xfwd: true,
     //     ws: false
     //   }
-    // }
+    // },
+    // before: app => {},
+    // 如果存在mock数据
+    // before: require('./mock'),
   },
 
   pluginOptions: {
